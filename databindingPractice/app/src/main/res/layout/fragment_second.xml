@@ -11,7 +11,7 @@
             android:layout_height="match_parent">
         <TextView android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
-                  android:text="Binding in activity"/>
+                  android:text="Binding in second activity"/>
         <TextView android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:text="@{`First Name : ` + user.firstName}"/>
@@ -19,7 +19,7 @@
                   android:layout_height="wrap_content"
                   android:text="@{`Last Name : ` + user.lastName}"/>
         <Button android:id = "@+id/button"
-		        android:layout_width="wrap_content"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="click me"
                 android:onClick="@{listener::onClick}"/>
@@ -29,10 +29,5 @@
                 android:text="I am adult"
                 android:visibility="@{user.isAdult? View.VISIBLE : View.GONE}"
         />
-        <Button android:id = "@+id/button_next"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="click me"
-                android:onClick="@{listener::onClick}"/>
     </LinearLayout>
 </layout>
