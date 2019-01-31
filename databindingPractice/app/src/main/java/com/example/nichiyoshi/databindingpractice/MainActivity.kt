@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-        val user = User("Test", "User")
+        val user = User("Taro", "Tanaka", true)
         binding.user = user
         binding.listener = this
     }
