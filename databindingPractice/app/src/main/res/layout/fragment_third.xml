@@ -18,5 +18,10 @@
                 bind:firstName="@{user.firstName}"
                 bind:lastName="@{user.lastName}"
         />
+        <Button
+                android:id="@+id/button_to_fourth_activity"
+                android:text="go to fourth activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:onClick="@{listener::onClick}"/>
     </LinearLayout>
 </layout>
