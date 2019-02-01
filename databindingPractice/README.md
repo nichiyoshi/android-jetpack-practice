@@ -1,11 +1,9 @@
-Self-learning project of Data Binding Library
+Self-learning project of [Data Binding Library](https://developer.android.com/topic/libraries/data-binding/)
 
 - MainActivity
- - Binding in activity
+    - Binding in activity
 - SecondActivity
- - Binding in fragment
+    - Binding in fragment
 - ThirdActivity
- - Binding in fragment with "include" other layout file
-
-[Official guide](https://developer.android.com/topic/libraries/data-binding/)
+    - Binding in fragment with "include" other layout file
 
