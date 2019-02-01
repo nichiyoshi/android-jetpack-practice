@@ -14,7 +14,7 @@
                   android:text="Binding in activity"/>
         <TextView android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
-                  android:text="@{`First Name : ` + user.firstName, default=`not yet provided`}"/>
+                  android:text='@{"First Name : " + user.firstName, default="not yet provided"}'/>
         <TextView android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:text="@{`Last Name : ` + user.lastName, default=`not yet provided`}"/>

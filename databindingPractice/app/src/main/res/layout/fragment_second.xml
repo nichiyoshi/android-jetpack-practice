@@ -11,14 +11,14 @@
             android:layout_height="match_parent">
         <TextView android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
-                  android:text="Binding in second activity"/>
+                  android:text="Binding in second fragment"/>
         <TextView android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
-                  android:text="@{`First Name : ` + user.firstName, default=`not yet provided`"/>
+                  android:text="@{`First Name : ` + user.firstName, default=`not yet provided`}"/>
         <TextView android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:text="@{`Last Name : ` + user.lastName, default=`not yet provided`}"/>
-        <Button android:id = "@+id/button"
+        <Button android:id = "@+id/button_to_third_activity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="click me"
