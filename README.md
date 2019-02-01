@@ -1,10 +1,6 @@
 # android-jetpack-practice
 Android Jet Pack practice
 
-[Samples for Android Architecture Components](https://github.com/googlesamples/android-architecture-components)
-
-[Architecture guide](https://developer.android.com/jetpack/docs/guide)
-
 This project will be consisting of these sub-projects
 
 - Data Binding Library practice project
