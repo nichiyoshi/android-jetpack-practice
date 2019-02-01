@@ -5,5 +5,5 @@ Self-learning project of [Data Binding Library](https://developer.android.com/to
 - SecondActivity
     - Binding in fragment
 - ThirdActivity
-    - Binding in fragment with "include" other layout file
+    - Binding in fragment with "including" other layout file
 
