@@ -14,7 +14,7 @@ class FourthActivity: AppCompatActivity() {
     private lateinit var viewAdapter: RecyclerView.Adapter<*>
     private lateinit var viewManager: RecyclerView.LayoutManager
 
-    private val myDataset = arrayListOf(1,2,3,4,5,6,7,8,9,10).map { value -> User(value.toString(), "dayo") }
+    private val myDataset: List<User> = (1..30).map { value -> User(value.toString(), "dayo") }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
