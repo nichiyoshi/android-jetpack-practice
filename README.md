@@ -1,5 +1,5 @@
 # android-jetpack-practice
-[Android Jet Pack](https://developer.android.com/jetpack/) practice
+This is self-learning project of [Android Jet Pack](https://developer.android.com/jetpack/) 
 
 This project will be consisting of these sub-projects
 
