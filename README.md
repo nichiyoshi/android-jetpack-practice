@@ -1,7 +1,18 @@
-# Android Lifecycle-aware Components Codelab
 
-Please follow along the codelab steps [here](https://codelabs.developers.google.com/codelabs/android-lifecycles/).
+# android-jetpack-practice
+This is self-learning project of [Android Jet Pack](https://developer.android.com/jetpack/) 
 
-# Filing issues
+This project will be consisting of these sub-projects
 
-If you find errors in the codelab steps or the code, please file them [here](https://github.com/googlecodelabs/android-lifecycles/issues/new)
+- Data Binding Library practice project
+- LiveData practice project
+- Navigation practice project
+- Room practice project
+- ViewModel practice project
+
+### References
+
+- [Android Architecture Components](https://developer.android.com/topic/libraries/architecture/)
+- [Samples for Android Architecture Components](https://github.com/googlesamples/android-architecture-components)
+- [Architecture guide](https://developer.android.com/jetpack/docs/guide)
+- [Android lifecycle-aware components codelab](https://codelabs.developers.google.com/codelabs/android-lifecycles/#0)

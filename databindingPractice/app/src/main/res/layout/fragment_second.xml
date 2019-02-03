@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="user" type="com.example.nichiyoshi.databindingpractice.User"/>
+        <variable name="listener" type="android.view.View.OnClickListener"/>
+        <import type="android.view.View"/>
+    </data>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Binding in second fragment"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@{`First Name : ` + user.firstName, default=`not yet provided`}"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@{`Last Name : ` + user.lastName, default=`not yet provided`}"/>
+        <Button android:id = "@+id/button_to_third_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="click me"
+                android:onClick="@{listener::onClick}"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I am adult"
+                android:visibility="@{user.isAdult? View.VISIBLE : View.GONE}"
+        />
+    </LinearLayout>
+</layout>
