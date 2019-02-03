@@ -14,15 +14,21 @@
  * limitations under the License.
  */
 
-package com.example.android.lifecycles.step5;
+package com.example.android.lifecycles.step1
 
-import androidx.lifecycle.MutableLiveData;
-import androidx.lifecycle.ViewModel;
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import android.widget.Chronometer
 
-/**
- * A ViewModel used in step 5.
- */
-public class SeekBarViewModel extends ViewModel {
+import com.example.android.codelabs.lifecycle.R
 
-    public MutableLiveData<Integer> seekbarValue = new MutableLiveData<>();
+
+class ChronoActivity1 : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+        val chronometer = findViewById<Chronometer>(R.id.chronometer)
+        chronometer.start()
+    }
 }

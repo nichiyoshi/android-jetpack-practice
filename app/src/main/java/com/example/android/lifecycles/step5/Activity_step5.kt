@@ -14,26 +14,21 @@
  * limitations under the License.
  */
 
-package com.example.android.lifecycles.step2;
+package com.example.android.lifecycles.step5;
 
-import androidx.annotation.Nullable;
+import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProviders
 
-import androidx.lifecycle.ViewModel;
+import com.example.android.codelabs.lifecycle.R;
 
 /**
- * A ViewModel used for the {@link ChronoActivity2}.
+ * Shows two {@link Fragment_step5} fragments.
  */
-public class ChronometerViewModel extends ViewModel {
-
-    @Nullable
-    private Long mStartTime;
-
-    @Nullable
-    public Long getStartTime() {
-        return mStartTime;
-    }
-
-    public void setStartTime(final long startTime) {
-        this.mStartTime = startTime;
+class Activity_step5 : AppCompatActivity(){
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_step5)
     }
 }
