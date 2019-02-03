@@ -14,3 +14,4 @@ This project will be consisting of these sub-projects
 - [Android Architecture Components](https://developer.android.com/topic/libraries/architecture/)
 - [Samples for Android Architecture Components](https://github.com/googlesamples/android-architecture-components)
 - [Architecture guide](https://developer.android.com/jetpack/docs/guide)
+- [Android lifecycle-aware components codelab](https://codelabs.developers.google.com/codelabs/android-lifecycles/#0)
