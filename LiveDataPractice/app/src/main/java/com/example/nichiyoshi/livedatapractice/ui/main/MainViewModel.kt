@@ -3,6 +3,7 @@ package com.example.nichiyoshi.livedatapractice.ui.main
 import android.arch.lifecycle.MediatorLiveData
 import android.arch.lifecycle.MutableLiveData
 import android.arch.lifecycle.ViewModel
+import android.databinding.adapters.TextViewBindingAdapter
 
 class MainViewModel : ViewModel() {
 
@@ -18,23 +19,29 @@ class MainViewModel : ViewModel() {
         MediatorLiveData<Int>()
     }
 
-    val dummyInt : Int = 100
-
     init {
         sumNumber.addSource(firstNumber){
-            sumNumber.value = it?:0 + (secondNumber.value?:0)
+            sumNumber.value = (it?:0) + (secondNumber.value?:0)
         }
 
         sumNumber.addSource(secondNumber){
-            sumNumber.value = firstNumber.value?:0 + (it?:0)
+            sumNumber.value = (firstNumber.value?:0) + (it?:0)
         }
     }
 
-    fun updateFirstNumber(num: Int){
+    val onFirstTextChanged = TextViewBindingAdapter.OnTextChanged { s, _, _, _ ->
+            updateFirstNumber(s.toString().toInt())
+        }
+
+    val onSecondTextChanged = TextViewBindingAdapter.OnTextChanged { s, _, _, _ ->
+        updateSecondNumber(s.toString().toInt())
+    }
+
+    private fun updateFirstNumber(num: Int){
         firstNumber.postValue(num)
     }
 
-    fun updateSecondNumber(num: Int){
+    private fun updateSecondNumber(num: Int){
         secondNumber.postValue(num)
     }
 }
