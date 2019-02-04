@@ -30,18 +30,18 @@ class MainViewModel : ViewModel() {
     }
 
     val onFirstTextChanged = TextViewBindingAdapter.OnTextChanged { s, _, _, _ ->
-            updateFirstNumber(s.toString().toInt())
+            updateFirstNumberLiveData(s.toString().toInt())
         }
 
     val onSecondTextChanged = TextViewBindingAdapter.OnTextChanged { s, _, _, _ ->
-        updateSecondNumber(s.toString().toInt())
+        updateSecondNumberLiveData(s.toString().toInt())
     }
 
-    private fun updateFirstNumber(num: Int){
+    private fun updateFirstNumberLiveData(num: Int){
         firstNumber.postValue(num)
     }
 
-    private fun updateSecondNumber(num: Int){
+    private fun updateSecondNumberLiveData(num: Int){
         secondNumber.postValue(num)
     }
 }
